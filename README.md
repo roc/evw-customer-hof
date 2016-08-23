@@ -1,14 +1,14 @@
-[![Build Status](https://travis-ci.org/UKHomeOffice/evw-self-serve.svg?branch=master)](https://travis-ci.org/UKHomeOffice/evw-self-serve)
-[![Dependency Status](https://david-dm.org/UKHomeOffice/evw-self-serve.svg)](https://david-dm.org/UKHomeOffice/evw-self-serve)
-[![devDependency Status](https://david-dm.org/UKHomeOffice/evw-self-serve/dev-status.svg)](https://david-dm.org/UKHomeOffice/evw-self-serve#info=devDependencies)
+[![Build Status](https://travis-ci.org/UKHomeOffice/evw-customer-hof.svg?branch=master)](https://travis-ci.org/UKHomeOffice/evw-customer-hof)
+[![Dependency Status](https://david-dm.org/UKHomeOffice/evw-customer-hof.svg)](https://david-dm.org/UKHomeOffice/evw-customer-hof)
+[![devDependency Status](https://david-dm.org/UKHomeOffice/evw-customer-hof/dev-status.svg)](https://david-dm.org/UKHomeOffice/evw-customer-hof#info=devDependencies)
 
-# EVW Self serve
+# EVW Customer HOF
 
-A tiny, HOF-based form to allow Electronic Visa Waiver users to update their travel details.
+A HOF version of the EVW Customer form.
 
 ### Prerequisities
 
-What things you need to install the software and how to install them
+Things you need to install the software and how to install them
 - [NodeJS](https://nodejs.org/en/)
 - npm (bundled with node)
 - [Redis server](http://redis.io/topics/quickstart) running on the default port
