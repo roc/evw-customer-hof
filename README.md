@@ -21,7 +21,7 @@ $ npm install
 $ npm run dev
 ```
 
-Go to http://localhost:8080/update-journey-details
+Go to http://localhost:8080/start
 
 ## Running the tests
 You will need the server running to run the cucumber tests against.
