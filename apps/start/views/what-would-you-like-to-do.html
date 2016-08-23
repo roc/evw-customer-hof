@@ -1,0 +1,53 @@
+{{<layout}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$maincontentClass}}column-full{{/maincontentClass}}
+
+{{$content}}
+
+<div class="hub-start slides">
+  <header>
+    <h1 class="heading-large">{{#t}}pages.what-would-you-like-to-do.header{{/t}}</h1>
+  </header>
+
+  {{<partials-form}}
+
+  {{$form}}
+
+  <fieldset class="form-group {{#errors.start-options}}error{{/errors.start-options}}">
+    <legend class="visuallyhidden">{{#t}}fields.start-options.legend{{/t}}</legend>
+    <label class="block-label" for="apply">
+      <input id="apply" type="radio" name="start-options" value="apply" data-msg="Please select an option" aria-required="true">
+      <div><div class="inner"></div></div>
+      {{#t}}fields.start-options.options.apply.label{{/t}}
+    </label>
+    <label class="block-label" for="update">
+      <input id="update" type="radio" name="start-options" value="update" data-msg="Please select an option" aria-required="true">
+      <div><div class="inner"></div></div>
+      {{#t}}fields.start-options.options.update.label{{/t}}
+    </label>
+  </fieldset>
+
+  {{#errors.start-options}}
+      <div class="form-group">
+        <a href="#apply" id="{{key}}-error" class="validation-message">{{errors.start-options.message}}</a>
+      </div>
+  {{/errors.start-options}}
+
+  {{#input-submit}}continue{{/input-submit}}
+
+  {{/form}}
+
+  {{/partials-form}}
+</div>
+
+{{/content}}
+
+{{/layout}}

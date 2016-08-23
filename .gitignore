@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+public
+dump.rdb
+apps/*/translations/en/default.json
+selenium-debug.log
+Gemfile.lock
+fpm/build/usr/share/evw-self-serve/*
+npm-debug.log
+.DS_Store
+.idea

@@ -1,0 +1,163 @@
+$path: "../img/";
+
+@import "../../node_modules/hof/node_modules/hmpo-frontend-toolkit/assets/stylesheets/app.scss";
+
+@import "alert.scss";
+@import "icons.scss";
+@import "validation.scss";
+@import "panels.scss";
+@import "hof_overrides";
+@import "confirmation";
+@import "slides";
+
+
+.phase-banner {
+  @include phase-banner(beta);
+}
+
+#step {
+  @include core-16;
+  a {
+    display: inline-block;
+    margin-top: $gutter-half;
+    padding-left: 14px;
+    border-bottom: $black 1px solid;
+    color: $black;
+    text-decoration: none;
+    background: url("../images/icons/icon-caret-left.png") no-repeat 0 4px;
+    @include media(mobile) {
+      background-position: 0 1px;
+    }
+    margin-right: 14px;
+  }
+
+  span {
+    display: inline-block;
+    margin-top: $gutter-half;
+    color: $secondary-text-colour;
+  }
+}
+
+h1 {
+  @include bold-24;
+}
+
+.form-label-bold {
+  @include bold-19;
+}
+
+//autocomplete styling
+.tt-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 65%;
+}
+
+.tt-suggestion {
+  padding: 0.5em;
+
+  &:hover,
+  &.tt-cursor {
+    color: #fff;
+    background-color: #0097cf;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.twitter-typeahead {
+  width: 100%;
+}
+
+//custom form styling
+.form-control {
+  border: 2px solid #6f777b;
+
+  @include media(desktop) {
+    width: 65%;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+// GOVUK Elements `.form-date` overrides
+.form-date {
+  border-left: none;
+  padding-left: 0;
+
+  label {
+    @include core-19();
+  }
+
+  .form-group {
+    margin-top: 0;
+
+    input {
+      &[id$="-year"] {
+        width: 70px;
+      }
+    }
+  }
+}
+
+#delivery-details {
+  width: 100%;
+}
+
+.table-details {
+  width: 100%;
+
+  tbody {
+    td:nth-child(1) {
+      width: 40%;
+    }
+    td:nth-child(2) {
+      width: 50%;
+    }
+    td:nth-child(3) {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
+
+  .button {
+    margin: 0;
+    background: #dde0e1;
+    color: #000;
+    box-shadow: 0 2px 0 #b5babe;
+  }
+}
+
+.flight-details {
+  td {
+    @include core-19();
+  }
+
+  td[class] {
+    @include bold-19();
+  }
+}
+
+#flight-number {
+  width: 110px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button[type="done"] {
+  margin-top: 5px;
+}
+
+table td {
+  @include core-19();
+}
+
+#accept-declaration-group {
+  margin: 0 0 5px;
+}

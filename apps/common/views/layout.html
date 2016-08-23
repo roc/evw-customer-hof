@@ -1,0 +1,42 @@
+{{< govuk-template}}
+
+{{$head}}
+    {{> partials-head}}
+{{/head}}
+
+{{$pageTitle}}
+    {{$header}}{{/header}}
+        {{#t}}app.title{{/t}} &ndash; GOV.UK
+{{/pageTitle}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+{{$insideHeader}}{{/insideHeader}}
+
+{{$maincontentClass}}column-two-thirds{{/maincontentClass}}
+
+{{$main}}
+  <main id="content" class="main" role="main">
+    <div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>
+        <span>This is a new service – your <a href="mailto:evw-contactus@homeoffice.gsi.gov.uk?subject=EVW Self Serve Beta feedback">feedback</a> will help us to improve it.</span>
+      </p>
+    </div>
+    <div class="grid-row">
+        {{>partials-maincontent}}
+    </div>
+
+     {{> partials-gatag}}
+
+    <script type="text/javascript" src="{{assetPath}}/js/bundle.js"></script>
+  </main>
+{{/main}}
+
+{{$footerSupportLinks}}
+  <ul>
+    <li><a href="/cookies">Cookies</a></li>
+    <li><a href="/terms-and-conditions">Terms and conditions</a></li>
+  </ul>
+{{/footerSupportLinks}}
+
+{{/ govuk-template}}

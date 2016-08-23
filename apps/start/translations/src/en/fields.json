@@ -1,0 +1,13 @@
+{
+  "start-options": {
+    "legend": "What would you like to do?",
+    "options": {
+      "apply": {
+        "label": "Make a new application"
+      },
+      "update": {
+        "label": "Change your travel details"
+      }
+    }
+  }
+}
