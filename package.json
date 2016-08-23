@@ -1,12 +1,12 @@
 {
-  "name": "EVW-Self-Serve",
+  "name": "EVW-Customer-HOF",
   "version": "1.0.0",
   "main": "app.js",
-  "description": "A tiny, HOF-based form to allow Electronic Visa Waiver users to update their travel details.",
+  "description": "A HOF version of the EVW Customer form.",
   "license": "GPLv2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/UKHomeOffice/evw-self-serve/"
+    "url": "https://github.com/UKHomeOffice/evw-customer-hof/"
   },
   "scripts": {
     "start": "node .",
