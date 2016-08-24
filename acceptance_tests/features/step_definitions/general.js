@@ -28,10 +28,8 @@ module.exports = function () {
         this.click(`input[type=submit]`);
     });
 
-    this.Then(/^the validation summary should contain$/, function (strings) {
-        strings.split(/\n/).forEach( function (string) {
-            this.assert.containsText('.validation-summary', string);
-        }, this);
+    this.Then(/^the "([^"]*)" should contain "([^"]*)"$/, function (field, value) {
+        this.assert.containsText(`.${urlise(field)}`, value);
     });
 
 };
