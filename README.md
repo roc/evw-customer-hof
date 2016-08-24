@@ -11,12 +11,12 @@ A HOF version of the EVW Customer form.
 Things you need to install the software and how to install them
 - [NodeJS](https://nodejs.org/en/)
 - npm (bundled with node)
-- [Redis server](http://redis.io/topics/quickstart) running on the default port
+- [MongoDB](https://www.mongodb.com) running on the default port
 
 ### Installing
 
 ```bash
-$ redis-server &
+$ mongod &
 $ npm install
 $ npm run dev
 ```
